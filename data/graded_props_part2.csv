@@ -1,0 +1,262 @@
+player,stat,line,side,odds,dollar_win,our_mean,confidence_pct,source,game,actual,hit,exclude_from_calibration
+Jalen Hurts,Rush Yards,20.0,Over,-275,0.36,30.1,68.4,"model (real historical SD, corrected)",WAS @ PHI,48.0,True,False
+Aaron Rodgers,Pass Yards,175.0,Over,-290,0.34,202.5,68.3,model,PIT @ ATL,221.0,True,False
+Michael Pittman,Rec Yards,39.5,Over,-108,0.93,51.5,68.3,,PIT @ ATL,58.0,True,False
+Jordan Mason,rush_yds,39.5,Over,-146,0.68,51.5,68.3,,GB @ MIN,59.0,True,False
+Breece Hall,Rec Yards,19.5,Over,-128,0.78,31.7,68.1,,NYJ @ TEN,16.0,False,False
+Juwan Johnson,Rec Yards,29.5,Over,-270,0.37,43.1,68.1,,DET @ NO,54.0,True,False
+Kyler Murray,rush_yds,24.5,Over,-104,0.96,35.1,68.1,,GB @ MIN,9.0,False,False
+Michael Mayer,rec_yds,29.5,Over,-240,0.42,40.9,68.0,,MIA @ LV,32.0,True,False
+Aaron Jones,rec_yds,9.5,Over,-210,0.48,15.2,68.0,,GB @ MIN,0.0,False,False
+Lamar Jackson,Rush Yards,20.0,Over,-700,0.14,33.1,67.9,"model (real historical SD, corrected)",IND @ BAL,43.0,True,False
+Jaylen Warren,Rec Yards,9.5,Over,-330,0.3,17.0,67.9,,PIT @ ATL,27.0,True,False
+Ja'Marr Chase,Receptions,8.5,Over,194,1.94,10.2,67.8,,CIN @ TB,2.0,False,False
+Greg Dulcich,rec_yds,29.5,Over,106,1.06,44.7,67.8,,MIA @ LV,18.0,False,False
+Kendrick Bourne,rec_yds,19.5,Over,-104,0.96,28.2,67.7,,ARI @ LAC,75.0,True,False
+Aaron Rodgers,Pass TDs,1.0,Over,-500,0.2,1.144,67.7,model,PIT @ ATL,1.0,False,False
+Baker Mayfield,Rush Yards,20.0,Over,138,1.38,27.2,67.6,"model (real historical SD, corrected)",CIN @ TB,31.0,True,False
+Matthew Golden,rec_yds,14.5,Over,-750,0.13,25.3,67.6,,GB @ MIN,95.0,True,False
+Drake London,Receptions,4.5,Over,-160,0.62,5.6,67.6,,PIT @ ATL,2.0,False,False
+Cooper Rush,Pass Yards,150.0,Over,-310,0.32,175.0,67.6,ESTIMATE (not in model -- recent starter change),PIT @ ATL,143.0,False,False
+Adonai Mitchell,Rec Yards,14.5,Over,-420,0.24,29.3,67.5,,NYJ @ TEN,60.0,True,False
+Geno Smith,Pass TDs,1.0,Over,-245,0.41,1.123,67.5,model,NYJ @ TEN,0.0,False,False
+Geno Smith,Pass TDs,0.5,Over,-245,0.41,1.123,67.4,model,NYJ @ TEN,0.0,False,False
+Garrett Wilson,Receptions,4.5,Over,-240,0.42,5.6,67.4,,NYJ @ TEN,6.0,True,False
+Bijan Robinson,Rec Yards,19.5,Over,-330,0.3,28.6,67.3,,PIT @ ATL,90.0,True,False
+Jonathan Taylor,Rush Yards,60.0,Over,-250,0.4,79.7,67.3,model,IND @ BAL,98.0,True,False
+Quentin Johnston,rec,3.5,Over,116,1.16,4.56,67.3,,ARI @ LAC,2.0,False,False
+Matthew Golden,rec,1.5,Over,-900,0.11,2.27,67.2,,GB @ MIN,6.0,True,False
+Stefon Diggs,Rec Yards,39.5,Over,-138,0.72,50.3,67.1,,WAS @ PHI,55.0,True,False
+Jayden Daniels,Pass Yards,175.0,Over,-270,0.37,199.1,67.0,model,WAS @ PHI,164.0,False,False
+Justice Hill,Rush Yards,10.0,Over,102,1.02,18.5,67.0,model,IND @ BAL,18.0,True,False
+Tyler Shough,Pass TDs,1.0,Over,-440,0.23,1.111,67.0,model,DET @ NO,3.0,True,False
+Jahmyr Gibbs,Rec Yards,19.5,Over,-280,0.36,29.7,66.8,,DET @ NO,30.0,True,False
+Tre Harris,rec_yds,24.5,Over,-132,0.76,35.3,66.8,,ARI @ LAC,20.0,False,False
+Chase Brown,Rec Yards,14.5,Over,-270,0.37,23.2,66.7,,CIN @ TB,22.0,True,False
+MarShawn Lloyd,rush_yds,29.5,Over,-330,0.3,40.7,66.6,,GB @ MIN,37.0,True,False
+Adonai Mitchell,Receptions,1.5,Over,-400,0.25,2.5,66.5,,NYJ @ TEN,3.0,True,False
+Samaje Perine,Receptions,1.5,Over,138,1.38,2.3,66.4,,CIN @ TB,3.0,True,False
+Isaiah Likely,rec,2.5,Over,-260,0.38,3.07,66.4,,DAL @ NYG,8.0,True,False
+Chig Okonkwo,Rec Yards,19.5,Over,-192,0.52,27.7,66.4,,WAS @ PHI,16.0,False,False
+Chris Olave,Rec Yards,69.5,Over,-158,0.63,85.0,66.2,,DET @ NO,182.0,True,False
+Chase Brown,Rush Yards,50.0,Over,-174,0.57,65.8,66.1,model,CIN @ TB,56.0,True,False
+Dak Prescott,rush_yds,9.5,Over,114,1.14,13.0,66.0,,DAL @ NYG,14.0,True,False
+Ashton Jeanty,rush_yds,59.5,Over,-110,0.91,78.0,65.9,,MIA @ LV,102.0,True,False
+Ashton Jeanty,rec_yds,14.5,Over,-160,0.62,23.6,65.9,,MIA @ LV,45.0,True,False
+Tee Higgins,Rec Yards,59.5,Over,-132,0.76,78.0,65.9,,CIN @ TB,59.0,False,False
+MarShawn Lloyd,rec_yds,4.5,Over,-280,0.36,10.8,65.7,,GB @ MIN,0.0,False,False
+Derrick Henry,Rec Yards,4.5,Over,-180,0.56,10.0,65.7,,IND @ BAL,19.0,True,False
+Jaxson Dart,rush_yds,29.5,Over,-138,0.72,40.1,65.7,,DAL @ NYG,59.0,True,False
+Rachaad White,Rec Yards,9.5,Over,-210,0.48,18.0,65.6,,WAS @ PHI,5.0,False,False
+Andrei Iosivas,Rec Yards,14.5,Over,-104,0.96,24.0,65.6,,CIN @ TB,12.0,False,False
+CeeDee Lamb,rec_yds,69.5,Over,-148,0.68,86.5,65.6,,DAL @ NYG,44.0,False,False
+Malik Nabers,rec_yds,49.5,Over,-160,0.62,62.6,65.5,,DAL @ NYG,69.0,True,False
+Tyler Warren,Rec Yards,39.5,Over,-166,0.6,49.5,65.5,,IND @ BAL,13.0,False,False
+Isaac TeSlaa,Rec Yards,9.5,Over,-235,0.43,16.2,65.4,,DET @ NO,0.0,False,False
+Ladd McConkey,rec_yds,69.5,Over,154,1.54,87.3,65.4,,ARI @ LAC,82.0,True,False
+Gunnar Helm,Rec Yards,14.5,Over,-225,0.44,19.7,65.3,,NYJ @ TEN,28.0,True,False
+Trey McBride,rec,5.5,Over,-160,0.62,6.31,65.2,,ARI @ LAC,9.0,True,False
+Travis Etienne,Rush Yards,40.0,Over,-310,0.32,49.9,65.2,model,DET @ NO,46.0,True,False
+Chase Brown,Receptions,3.5,Over,-110,0.91,5.3,65.2,,CIN @ TB,5.0,True,False
+Garrett Wilson,Rec Yards,49.5,Over,-210,0.48,64.1,65.0,,NYJ @ TEN,79.0,True,False
+Breece Hall,Rush Yards,50.0,Over,-260,0.38,66.6,65.0,model,NYJ @ TEN,102.0,True,False
+Chase Brown,Rush Yards,56.5,Over,-114,0.88,65.8,59.6,model,CIN @ TB,56.0,False,False
+Mason Taylor,Rec Yards,14.5,Over,-215,0.47,18.0,59.6,,NYJ @ TEN,-2.0,False,False
+Jalen Hurts,Rush Yards,25.0,Over,-166,0.6,30.1,59.6,"model (real historical SD, corrected)",WAS @ PHI,48.0,True,False
+Rachaad White,Rush Yards,25.0,Over,-114,0.88,29.5,59.5,model,WAS @ PHI,22.0,False,False
+George Pickens,rec,5.5,Over,130,1.3,6.03,59.4,,DAL @ NYG,3.0,False,False
+Kyler Murray,rush_yds,29.5,Over,146,1.46,35.1,59.4,,GB @ MIN,9.0,False,False
+Tre Harris,rec_yds,29.5,Over,104,1.04,35.3,59.4,,ARI @ LAC,20.0,False,False
+Geno Smith,Rush Yards,6.5,Over,-114,0.88,10.1,59.4,"model (real historical SD, corrected)",NYJ @ TEN,10.0,True,False
+Cooper Rush,Pass TDs,0.5,Over,-235,0.43,0.9,59.4,ESTIMATE (not in model -- recent starter change),PIT @ ATL,1.0,True,False
+Makai Lemon,Receptions,3.5,Over,310,3.1,4.0,59.4,,WAS @ PHI,3.0,False,False
+Cooper Rush,Pass TDs,1.0,Over,-235,0.43,0.9,59.3,ESTIMATE (not in model -- recent starter change),PIT @ ATL,1.0,False,False
+Tyjae Spears,Rush Yards,20.0,Over,-192,0.52,25.3,59.2,model,NYJ @ TEN,12.0,False,False
+Cam Ward,Rush Yards,9.5,Over,-114,0.88,12.1,59.2,"model (real historical SD, corrected)",NYJ @ TEN,21.0,True,False
+Jahmyr Gibbs,Rec Yards,24.5,Over,-182,0.55,29.7,59.1,,DET @ NO,30.0,True,False
+Jayden Daniels,Rush Yards,36.5,Over,-114,0.88,42.8,59.1,"model (real historical SD, corrected)",WAS @ PHI,31.0,False,False
+Jonathan Taylor,Rush Yards,70.0,Over,-158,0.63,79.7,59.0,model,IND @ BAL,98.0,True,False
+Devaughn Vele,Receptions,3.5,Over,-104,0.96,4.0,59.0,,DET @ NO,7.0,True,False
+Alec Pierce,Receptions,2.5,Over,-160,0.62,2.9,58.9,,IND @ BAL,4.0,True,False
+Kirk Cousins,pass_yds,224.5,Over,134,1.34,241.3,58.9,,MIA @ LV,160.0,False,False
+Matthew Golden,rec_yds,19.5,Over,-440,0.23,25.3,58.9,,GB @ MIN,95.0,True,False
+Christian Watson,rec_yds,39.5,Over,-270,0.37,46.5,58.8,,GB @ MIN,147.0,True,False
+Jalen Hurts,Pass Yards,225.0,Over,114,1.14,240.0,58.7,model,WAS @ PHI,203.0,False,False
+Malik Willis,pass_yds,224.5,Over,265,2.65,243.5,58.7,,MIA @ LV,220.0,False,False
+DK Metcalf,Receptions,3.5,Over,-136,0.74,3.8,58.7,,PIT @ ATL,4.0,True,False
+Jayden Reed,rec_yds,39.5,Over,-146,0.68,45.8,58.6,,GB @ MIN,20.0,False,False
+Travis Etienne,Rec Yards,19.5,Over,146,1.46,23.8,58.6,,DET @ NO,32.0,True,False
+Cam Skattebo,rush_yds,39.5,Over,-225,0.44,45.3,58.6,,DAL @ NYG,81.0,True,False
+Ashton Jeanty,rec,3.5,Over,102,1.02,4.12,58.5,,MIA @ LV,6.0,True,False
+Jahmyr Gibbs,Rush Yards,70.0,Over,-230,0.43,77.8,58.5,model (corrected -- Pacheco share removed),DET @ NO,156.0,True,False
+Chris Olave,Receptions,6.5,Over,102,1.02,7.1,58.4,,DET @ NO,10.0,True,False
+Saquon Barkley,Rec Yards,14.5,Over,-130,0.77,18.4,58.4,,WAS @ PHI,-3.0,False,False
+Justin Herbert,pass_yds,249.5,Over,128,1.28,266.3,58.3,,ARI @ LAC,209.0,False,False
+Sam LaPorta,Receptions,3.5,Over,-174,0.57,3.8,58.2,,DET @ NO,5.0,True,False
+Bijan Robinson,Rec Yards,24.5,Over,-210,0.48,28.6,58.1,,PIT @ ATL,90.0,True,False
+Chig Okonkwo,Receptions,2.5,Over,-158,0.63,2.8,58.1,,WAS @ PHI,2.0,False,False
+Jared Goff,Pass Yards,275.0,Over,116,1.16,289.9,58.0,model,DET @ NO,206.0,False,False
+Bucky Irving,Receptions,2.5,Over,146,1.46,2.9,57.9,,CIN @ TB,7.0,True,False
+Saquon Barkley,Receptions,2.5,Over,-102,0.98,3.0,57.9,,WAS @ PHI,1.0,False,False
+Michael Wilson,rec,3.5,Over,-122,0.82,3.87,57.9,,ARI @ LAC,5.0,True,False
+Javonte Williams,rush_yds,49.5,Over,-420,0.24,55.8,57.8,,DAL @ NYG,41.0,False,False
+Jalen Nailor,rec,4.5,Over,250,2.5,5.02,57.8,,MIA @ LV,3.0,False,False
+Daniel Jones,Pass Yards,200.0,Over,-275,0.36,211.0,57.7,model,IND @ BAL,166.0,False,False
+Tee Higgins,Rec Yards,69.5,Over,118,1.18,78.0,57.6,,CIN @ TB,59.0,False,False
+Braelon Allen,Rush Yards,10.0,Over,-320,0.31,12.2,57.6,model,NYJ @ TEN,40.0,True,False
+Rashod Bateman,Rec Yards,19.5,Over,-174,0.57,22.7,57.5,,IND @ BAL,0.0,False,False
+Andrei Iosivas,Rec Yards,19.5,Over,146,1.46,24.0,57.5,,CIN @ TB,12.0,False,False
+Cam Ward,Rush Yards,10.0,Over,-114,0.88,12.1,57.5,"model (real historical SD, corrected)",NYJ @ TEN,21.0,True,False
+Tee Higgins,Receptions,5.5,Over,138,1.38,5.9,57.4,,CIN @ TB,3.0,False,False
+Jaxson Dart,pass_yds,199.5,Over,-160,0.62,215.1,57.4,,DAL @ NYG,230.0,True,False
+Ashton Jeanty,rec_yds,19.5,Over,106,1.06,23.6,57.4,,MIA @ LV,45.0,True,False
+Kendrick Bourne,rec_yds,24.5,Over,142,1.42,28.2,57.4,,ARI @ LAC,75.0,True,False
+Alec Pierce,Rec Yards,39.5,Over,-138,0.72,45.4,57.3,,IND @ BAL,61.0,True,False
+Wan'Dale Robinson,Rec Yards,39.5,Over,-130,0.77,44.1,57.2,,NYJ @ TEN,38.0,False,False
+Dallas Goedert,Receptions,3.5,Over,-122,0.82,3.8,57.2,,WAS @ PHI,4.0,True,False
+Ashton Jeanty,rush_yds,69.5,Over,152,1.52,78.0,57.2,,MIA @ LV,102.0,True,False
+Chase Brown,Rec Yards,19.5,Over,-162,0.62,23.2,57.2,,CIN @ TB,22.0,True,False
+Tyler Shough,Rush Yards,16.5,Over,-114,0.88,19.7,57.1,"model (real historical SD, corrected)",DET @ NO,8.0,False,False
+Ladd McConkey,rec_yds,79.5,Over,225,2.25,87.3,57.1,,ARI @ LAC,82.0,True,False
+Michael Wilson,rec_yds,39.5,Over,-130,0.77,44.8,57.1,,ARI @ LAC,56.0,True,False
+Chase Brown,Receptions,4.5,Over,194,1.94,5.3,57.0,,CIN @ TB,5.0,True,False
+Tyjae Spears,Receptions,2.5,Over,-144,0.69,2.8,57.0,,NYJ @ TEN,2.0,False,False
+Rachaad White,Rec Yards,14.5,Over,-114,0.88,18.0,57.0,,WAS @ PHI,5.0,False,False
+Baker Mayfield,Pass TDs,1.5,Over,-102,0.98,1.905,57.0,model,CIN @ TB,0.0,False,False
+Ja'Marr Chase,Receptions,9.5,Over,320,3.2,10.2,56.9,,CIN @ TB,2.0,False,False
+Travis Etienne,Receptions,2.5,Over,-114,0.88,2.8,56.8,,DET @ NO,7.0,True,False
+De'Von Achane,rec,4.5,Over,120,1.2,5.02,56.8,,MIA @ LV,4.0,False,False
+CeeDee Lamb,rec_yds,79.5,Over,104,1.04,86.5,56.8,,DAL @ NYG,44.0,False,False
+Justice Hill,Rush Yards,15.0,Over,188,1.88,18.5,56.8,model,IND @ BAL,18.0,True,False
+Samaje Perine,Rec Yards,9.5,Over,136,1.36,11.8,56.7,,CIN @ TB,30.0,True,False
+Breece Hall,Rush Yards,60.0,Over,-148,0.68,66.6,56.7,model,NYJ @ TEN,102.0,True,False
+CeeDee Lamb,rec,6.5,Over,120,1.2,6.89,56.7,,DAL @ NYG,5.0,False,False
+Breece Hall,Receptions,3.5,Over,172,1.72,4.0,56.7,,NYJ @ TEN,2.0,False,False
+Devaughn Vele,Rec Yards,39.5,Over,-114,0.88,43.7,56.7,,DET @ NO,69.0,True,False
+De'Von Achane,rec_yds,29.5,Over,100,1.0,33.7,56.7,,MIA @ LV,30.0,True,False
+Jordan Addison,rec_yds,39.5,Over,-136,0.74,44.5,56.6,,GB @ MIN,0.0,False,False
+Baker Mayfield,Pass TDs,2.0,Over,-102,0.98,1.905,56.6,model,CIN @ TB,0.0,False,False
+Saquon Barkley,Rush Yards,80.0,Over,110,1.1,88.4,56.5,model,WAS @ PHI,83.0,True,False
+Jordan Love,rush_yds,9.5,Over,-114,0.88,10.6,56.5,,GB @ MIN,0.0,False,False
+Jaylen Warren,Rec Yards,14.5,Over,-192,0.52,17.0,56.4,,PIT @ ATL,27.0,True,False
+Rico Dowdle,Rec Yards,9.5,Over,-130,0.77,11.4,56.4,,PIT @ ATL,6.0,False,False
+Tony Pollard,Receptions,2.5,Over,225,2.25,2.9,56.4,,NYJ @ TEN,1.0,False,False
+Chig Okonkwo,Rec Yards,24.5,Over,-125,0.8,27.7,56.3,,WAS @ PHI,16.0,False,False
+Baker Mayfield,Pass Yards,250.0,Over,128,1.28,262.1,56.3,model,CIN @ TB,216.0,False,False
+Greg Dulcich,rec_yds,39.5,Over,194,1.94,44.7,56.2,,MIA @ LV,18.0,False,False
+Tre Tucker,rec,5.5,Over,220,2.2,5.98,56.2,,MIA @ LV,2.0,False,False
+Jahmyr Gibbs,Receptions,3.5,Over,-178,0.56,3.9,56.1,,DET @ NO,5.0,True,False
+Chase Brown,Rush Yards,60.0,Over,102,1.02,65.8,56.1,model,CIN @ TB,56.0,False,False
+Adonai Mitchell,Rec Yards,24.5,Over,-192,0.52,29.3,56.1,,NYJ @ TEN,60.0,True,False
+Amon-Ra St. Brown,Receptions,7.5,Over,154,1.54,7.9,55.9,,DET @ NO,10.0,True,False
+Joe Burrow,Pass Yards,269.5,Over,-114,0.88,283.3,55.9,model,CIN @ TB,254.0,False,False
+Mark Andrews,Rec Yards,39.5,Over,104,1.04,43.3,55.9,,IND @ BAL,49.0,True,False
+Jameson Williams,Rec Yards,59.5,Over,-110,0.91,66.1,55.7,,DET @ NO,45.0,False,False
+Baker Mayfield,Rush Yards,25.0,Over,220,2.2,27.2,55.7,"model (real historical SD, corrected)",CIN @ TB,31.0,True,False
+Dontayvion Wicks,Rec Yards,14.5,Over,-330,0.3,16.2,55.7,,WAS @ PHI,73.0,True,False
+Pat Freiermuth,Rec Yards,19.5,Over,-192,0.52,21.3,55.6,,PIT @ ATL,46.0,True,False
+Kyle Pitts,Receptions,3.5,Over,-220,0.45,3.8,55.5,,PIT @ ATL,0.0,False,False
+DK Metcalf,Rec Yards,49.5,Over,-110,0.91,53.4,55.5,,PIT @ ATL,40.0,False,False
+Chris Olave,Rec Yards,79.5,Over,-102,0.98,85.0,55.4,,DET @ NO,182.0,True,False
+Ja'Marr Chase,Rec Yards,109.5,Over,205,2.05,117.8,55.4,,CIN @ TB,12.0,False,False
+Bijan Robinson,Receptions,3.5,Over,-220,0.45,3.8,55.3,,PIT @ ATL,8.0,True,False
+Bucky Irving,Rush Yards,57.5,Over,-114,0.88,62.5,55.2,model,CIN @ TB,45.0,False,False
+Juwan Johnson,Rec Yards,39.5,Over,-138,0.72,43.1,55.1,,DET @ NO,54.0,True,False
+Terry McLaurin,Rec Yards,49.5,Over,-132,0.76,53.1,55.0,,WAS @ PHI,14.0,False,False
+Cade Otton,Rec Yards,29.5,Over,-132,0.76,32.3,54.8,,CIN @ TB,26.0,False,False
+Kenny Gainwell,Rec Yards,14.5,Over,-275,0.36,16.8,54.7,,CIN @ TB,3.0,False,False
+Garrett Wilson,Rec Yards,59.5,Over,-128,0.78,64.1,54.7,,NYJ @ TEN,79.0,True,False
+De'Von Achane,rush_yds,79.5,Over,148,1.48,85.0,54.7,,MIA @ LV,36.0,False,False
+Joe Burrow,Rush Yards,7.5,Over,-114,0.88,8.9,54.6,"model (real historical SD, corrected)",CIN @ TB,21.0,True,False
+Derrick Henry,Rush Yards,90.0,Over,140,1.4,95.1,54.6,model,IND @ BAL,144.0,True,False
+Lamar Jackson,Pass TDs,1.5,Over,-106,0.94,1.823,54.6,model,IND @ BAL,1.0,False,False
+Quentin Johnston,rec_yds,49.5,Over,122,1.22,53.8,54.5,,ARI @ LAC,17.0,False,False
+Jalen Nailor,rec_yds,59.5,Over,250,2.5,64.6,54.5,,MIA @ LV,27.0,False,False
+Jacoby Brissett,rush_yds,14.5,Over,152,1.52,15.6,54.5,,ARI @ LAC,17.0,True,False
+Amon-Ra St. Brown,Rec Yards,89.5,Over,142,1.42,95.0,54.5,,DET @ NO,67.0,False,False
+Jayden Daniels,Rush Yards,40.0,Over,106,1.06,42.8,54.4,"model (real historical SD, corrected)",WAS @ PHI,31.0,False,False
+Lamar Jackson,Rush Yards,30.0,Over,-270,0.37,33.1,54.4,"model (real historical SD, corrected)",IND @ BAL,43.0,True,False
+Kenny Gainwell,Receptions,2.5,Over,-225,0.44,2.8,54.3,,CIN @ TB,1.0,False,False
+Rashod Bateman,Receptions,1.5,Over,-205,0.49,1.6,54.2,,IND @ BAL,0.0,False,False
+Jack Bech,rec_yds,24.5,Over,138,1.38,26.6,54.1,,MIA @ LV,23.0,False,False
+Michael Pittman,Receptions,4.5,Over,118,1.18,4.7,54.0,,PIT @ ATL,3.0,False,False
+Omarion Hampton,rush_yds,59.5,Over,-192,0.52,63.1,54.0,,ARI @ LAC,43.0,False,False
+Tre Tucker,rec_yds,59.5,Over,174,1.74,64.6,54.0,,MIA @ LV,27.0,False,False
+Joe Burrow,Pass Yards,275.0,Over,-102,0.98,283.3,53.9,model,CIN @ TB,254.0,False,False
+Malik Washington,rec_yds,39.5,Over,188,1.88,42.9,53.9,,MIA @ LV,53.0,True,False
+Lamar Jackson,Pass TDs,2.0,Over,-106,0.94,1.823,53.9,model,IND @ BAL,1.0,False,False
+Emeka Egbuka,Rec Yards,59.5,Over,-112,0.89,63.3,53.7,,CIN @ TB,63.0,True,False
+Jacoby Brissett,pass_yds,224.5,Over,-106,0.94,229.8,53.7,,ARI @ LAC,277.0,True,False
+Isaac TeSlaa,Rec Yards,14.5,Over,-146,0.68,16.2,53.7,,DET @ NO,0.0,False,False
+Daniel Jones,Rush Yards,15.0,Over,148,1.48,16.7,53.7,"model (real historical SD, corrected)",IND @ BAL,4.0,False,False
+George Pickens,rec_yds,79.5,Over,142,1.42,83.5,53.6,,DAL @ NYG,28.0,False,False
+Rico Dowdle,Rush Yards,46.5,Over,-114,0.88,48.9,53.6,model,PIT @ ATL,15.0,False,False
+Tony Pollard,Rush Yards,60.0,Over,142,1.42,63.1,53.4,model,NYJ @ TEN,35.0,False,False
+Justice Hill,Rec Yards,14.5,Over,122,1.22,15.9,53.4,,IND @ BAL,10.0,False,False
+Malik Nabers,rec_yds,59.5,Over,100,1.0,62.6,53.4,,DAL @ NYG,69.0,True,False
+Jonathan Taylor,Rush Yards,76.5,Over,-114,0.88,79.7,53.2,model,IND @ BAL,98.0,True,False
+Samaje Perine,Rush Yards,15.0,Over,-178,0.56,16.7,53.2,model,CIN @ TB,20.0,True,False
+Jaylen Warren,Receptions,2.5,Over,-136,0.74,2.6,53.2,,PIT @ ATL,5.0,True,False
+MarShawn Lloyd,rec_yds,9.5,Over,-130,0.77,10.8,53.1,,GB @ MIN,0.0,False,False
+Jayden Reed,rec,3.5,Over,-132,0.76,3.61,53.1,,GB @ MIN,3.0,False,False
+Breece Hall,Rec Yards,29.5,Over,182,1.82,31.7,53.1,,NYJ @ TEN,16.0,False,False
+Michael Pittman,Rec Yards,49.5,Over,162,1.62,51.5,53.0,,PIT @ ATL,58.0,True,False
+Bucky Irving,Rush Yards,60.0,Over,-102,0.98,62.5,53.0,model,CIN @ TB,45.0,False,False
+Kenyon Sadiq,Receptions,2.5,Over,220,2.2,2.6,52.9,,NYJ @ TEN,3.0,True,False
+Jordan Mason,rush_yds,49.5,Over,120,1.2,51.5,52.9,,GB @ MIN,59.0,True,False
+Jalen Hurts,Rush Yards,28.5,Over,-114,0.88,30.1,52.9,"model (real historical SD, corrected)",WAS @ PHI,48.0,True,False
+Malik Nabers,rec,5.5,Over,118,1.18,5.62,52.8,,DAL @ NYG,6.0,True,False
+Geno Smith,Pass Yards,212.5,Over,-114,0.88,217.2,52.8,model,NYJ @ TEN,215.0,True,False
+Isaiah Likely,rec_yds,29.5,Over,-182,0.55,31.1,52.8,,DAL @ NYG,78.0,True,False
+Javonte Williams,rec,3.5,Over,310,3.1,3.73,52.7,,DAL @ NYG,5.0,True,False
+Drake London,Rec Yards,69.5,Over,174,1.74,71.5,52.6,,PIT @ ATL,29.0,False,False
+Michael Mayer,rec,4.5,Over,-122,0.82,4.61,52.4,,MIA @ LV,6.0,True,False
+Tucker Kraft,rec,4.5,Over,126,1.26,4.63,52.3,,GB @ MIN,3.0,False,False
+Michael Mayer,rec_yds,39.5,Over,-114,0.88,40.9,52.3,,MIA @ LV,32.0,False,False
+Marvin Harrison Jr.,rec,3.5,Over,-152,0.66,3.62,52.3,,ARI @ LAC,1.0,False,False
+Dak Prescott,pass_td,2.0,Over,-152,0.66,1.75,52.2,,DAL @ NYG,2.0,False,False
+Jake Ferguson,rec_yds,29.5,Over,-125,0.8,30.6,52.2,,DAL @ NYG,6.0,False,False
+Aaron Jones,rec_yds,14.5,Over,-114,0.88,15.2,52.1,,GB @ MIN,0.0,False,False
+MarShawn Lloyd,rush_yds,39.5,Over,-158,0.63,40.7,52.0,,GB @ MIN,37.0,False,False
+MarShawn Lloyd,rec,1.5,Over,-158,0.63,1.58,52.0,,GB @ MIN,0.0,False,False
+Drake London,Receptions,5.5,Over,126,1.26,5.6,51.9,,PIT @ ATL,2.0,False,False
+Aaron Rodgers,Pass Yards,200.0,Over,-154,0.65,202.5,51.8,model,PIT @ ATL,221.0,True,False
+Bucky Irving,Rec Yards,19.5,Over,158,1.58,20.6,51.8,,CIN @ TB,48.0,True,False
+Breece Hall,Rush Yards,64.5,Over,-114,0.88,66.6,51.7,model,NYJ @ TEN,102.0,True,False
+Carnell Tate,Rec Yards,39.5,Over,-102,0.98,40.9,51.7,,NYJ @ TEN,38.0,False,False
+Derrick Henry,Rec Yards,9.5,Over,116,1.16,10.0,51.5,,IND @ BAL,19.0,True,False
+Garrett Wilson,Receptions,5.5,Over,-114,0.88,5.6,51.5,,NYJ @ TEN,6.0,True,False
+Tucker Kraft,rec_yds,59.5,Over,188,1.88,60.2,51.5,,GB @ MIN,65.0,True,False
+Darnell Mooney,rec,1.5,Over,-128,0.78,1.52,51.4,,DAL @ NYG,2.0,True,False
+Tyjae Spears,Rush Yards,24.5,Over,-114,0.88,25.3,51.4,model,NYJ @ TEN,12.0,False,False
+Matthew Golden,rec_yds,24.5,Over,-290,0.34,25.3,51.3,,GB @ MIN,95.0,True,False
+Tyler Shough,Pass Yards,225.0,Over,-198,0.51,227.7,51.2,model,DET @ NO,410.0,True,False
+Stefon Diggs,Rec Yards,49.5,Over,126,1.26,50.3,51.2,,WAS @ PHI,55.0,True,False
+DeVonta Smith,Rec Yards,69.5,Over,108,1.08,80.5,51.1,,WAS @ PHI,53.0,False,False
+Caleb Douglas,rec_yds,39.5,Over,162,1.62,40.4,51.1,,MIA @ LV,94.0,True,False
+Bijan Robinson,Rush Yards,70.0,Over,-166,0.6,71.0,51.1,model,PIT @ ATL,83.0,True,False
+Quentin Johnston,rec,4.5,Over,240,2.4,4.56,51.0,,ARI @ LAC,2.0,False,False
+Makai Lemon,Rec Yards,39.5,Over,210,2.1,40.2,50.9,,WAS @ PHI,-5.0,False,False
+Mark Andrews,Receptions,3.5,Over,116,1.16,3.5,50.9,,IND @ BAL,4.0,True,False
+T.J. Hockenson,rec_yds,29.5,Over,140,1.4,29.9,50.8,,GB @ MIN,36.0,True,False
+Javonte Williams,rec_yds,19.5,Over,230,2.3,19.8,50.8,,DAL @ NYG,31.0,True,False
+Jahmyr Gibbs,Rec Yards,29.5,Over,-125,0.8,29.7,50.7,,DET @ NO,30.0,True,False
+Tre Harris,rec,3.5,Over,235,2.35,3.54,50.7,,ARI @ LAC,3.0,False,False
+Jaxson Dart,rush_yds,39.5,Over,158,1.58,40.1,50.6,,DAL @ NYG,59.0,True,False
+Jacory Croskey-Merritt,Rush Yards,50.0,Over,146,1.46,50.2,50.6,model,WAS @ PHI,63.0,True,False
+Gunnar Helm,Rec Yards,19.5,Over,-136,0.74,19.7,50.5,,NYJ @ TEN,28.0,True,False
+Aaron Jones,rush_yds,39.5,Over,178,1.78,39.8,50.5,,GB @ MIN,40.0,True,False
+Tyjae Spears,Rush Yards,25.0,Over,-114,0.88,25.3,50.5,model,NYJ @ TEN,12.0,False,False
+Kenyon Sadiq,Rec Yards,24.5,Over,182,1.82,24.8,50.4,,NYJ @ TEN,21.0,False,False
+Trey McBride,rec_yds,59.5,Over,102,1.02,59.9,50.4,,ARI @ LAC,95.0,True,False
+Jauan Jennings,rec_yds,24.5,Over,100,1.0,24.8,50.3,,GB @ MIN,0.0,False,False
+Jalen Hurts,Rush Yards,30.0,Over,-104,0.96,30.1,50.3,"model (real historical SD, corrected)",WAS @ PHI,48.0,True,False
+Geno Smith,Rush Yards,10.0,Over,142,1.42,10.1,50.3,"model (real historical SD, corrected)",NYJ @ TEN,10.0,False,False
+Chris Bell,rec_yds,49.5,Over,520,5.2,49.7,50.2,,MIA @ LV,25.0,False,False
+Lamar Jackson,Pass Yards,220.5,Over,-114,0.88,220.1,50.2,model,IND @ BAL,324.0,True,False
+Darnell Mooney,rec_yds,19.5,Over,-136,0.74,19.6,50.1,,DAL @ NYG,27.0,True,False
+Marvin Harrison Jr.,rec_yds,49.5,Over,-104,0.96,49.5,50.1,,ARI @ LAC,33.0,False,False
+Tyler Warren,Rec Yards,49.5,Over,110,1.1,49.5,50.0,,IND @ BAL,13.0,False,False
+Travis Etienne,Rush Yards,50.0,Over,-168,0.6,49.9,50.0,model,DET @ NO,46.0,False,False
+Jonathan Taylor,Receptions,2.5,Over,-154,0.65,2.5,49.9,,IND @ BAL,3.0,True,False
+Jonathan Taylor,Rush Yards,80.0,Over,100,1.0,79.7,49.9,model,IND @ BAL,98.0,True,False
