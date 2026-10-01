@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "db:push": "drizzle-kit push",
+    "db:push": "drizzle-kit push && tsx scripts/apply-views.mts",
     "db:views": "tsx scripts/apply-views.mts",
     "import:data": "tsx scripts/import-data.mts",
     "ingest:nflverse": "tsx scripts/ingest-nflverse.mts",
