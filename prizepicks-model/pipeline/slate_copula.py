@@ -5,11 +5,11 @@
 #    (SH_SD=0.6 receiver share competition, TOT_SD=6 shared game-scoring swing, EFF_B=0.6 efficiency link,
 #     CS_SD=0.5 carry competition, PF_K=20 game-level pass/rush TD lean, GL_SD=1.0 goal-line role lean).
 #  Each player's tuned sims are re-mapped by rank onto his own marginal values.
-import subprocess, os, pickle, shutil, numpy as np, pandas as pd
+import subprocess, os, sys, pickle, shutil, numpy as np, pandas as pd
 env=dict(os.environ)
-subprocess.run(['python3','slate_sim.py'],env=dict(env,SH_SD='0',TOT_SD='0',EFF_B='0',CS_SD='0'),check=True,capture_output=True)
+subprocess.run([sys.executable,'slate_sim.py'],env=dict(env,SH_SD='0',TOT_SD='0',EFF_B='0',CS_SD='0'),check=True,capture_output=True)
 shutil.move('slate_sims.pkl','slate_sims_marg.pkl')
-r=subprocess.run(['python3','slate_sim.py'],env=env,check=True,capture_output=True,text=True)
+r=subprocess.run([sys.executable,'slate_sim.py'],env=env,check=True,capture_output=True,text=True)
 S=pickle.load(open('slate_sims.pkl','rb')); M=pickle.load(open('slate_sims_marg.pkl','rb')); rng=np.random.default_rng(11)
 KEEP={'Anytime TDs','Pass TDs'}                     # TD stats keep the tuned run (centering sets their level)
 for k,v in S.items():
