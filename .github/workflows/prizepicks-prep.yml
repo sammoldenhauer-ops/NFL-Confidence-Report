@@ -24,10 +24,11 @@ permissions:
 
 jobs:
   prep:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, prizepicks]
     defaults:
       run:
         working-directory: prizepicks-model/pipeline
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -44,21 +45,19 @@ jobs:
 
       - name: Compute slate window
         id: window
-        shell: bash
         run: |
           START="${{ github.event.inputs.start }}"
           END="${{ github.event.inputs.end }}"
           if [ -z "$START" ]; then
+            # Date-only arithmetic (never combine a time-of-day with "+1 day" in one -d
+            # expression - that loses an hour across the DST boundary on this machine).
             case "${{ github.event.schedule }}" in
-              "0 20 * * 3")
-                START=$(date -u -d 'next Thursday 12:00' +%Y-%m-%dT%H)
-                END=$(date -u -d 'next Thursday 12:00 + 1 day' +%Y-%m-%dT%H)
-                ;;
-              *)
-                START=$(date -u -d '12:00' +%Y-%m-%dT%H)
-                END=$(date -u -d '12:00 + 1 day' +%Y-%m-%dT%H)
-                ;;
+              "0 20 * * 3") D1=$(date -u -d 'next Thursday' +%Y-%m-%d) ;;
+              *) D1=$(date -u +%Y-%m-%d) ;;
             esac
+            D2=$(date -u -d "$D1 + 1 day" +%Y-%m-%d)
+            START="${D1}T12"
+            END="${D2}T12"
           fi
           echo "start=$START" >> "$GITHUB_OUTPUT"
           echo "end=$END" >> "$GITHUB_OUTPUT"
