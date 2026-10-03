@@ -8,7 +8,9 @@ lo, hi = sys.argv[1], sys.argv[2]; ev = []; cur = None
 for i in range(12):
     url = f"https://api.sportsgameodds.com/v2/events?apiKey={K}&leagueID=NFL&oddsAvailable=true&limit=10" + (f"&cursor={cur}" if cur else "")
     try:
-        with urllib.request.urlopen(url, timeout=60) as r: d = json.loads(r.read().decode('utf-8'))
+        # SGO's WAF 403s on urllib's default "Python-urllib/x.y" User-Agent - harmless UA swap fixes it.
+        req = urllib.request.Request(url, headers={'User-Agent': 'curl/8.7.1'})
+        with urllib.request.urlopen(req, timeout=60) as r: d = json.loads(r.read().decode('utf-8'))
     except Exception as e:
         print('error:', e); break
     if not d.get('success'): print('error:', d.get('error')); break      # 'Rate limit exceeded' on a later page is normal
