@@ -1,0 +1,80 @@
+name: PrizePicks - prep slate
+
+# Read-only preview: pulls fresh lines/play-by-play and runs `run_slate.py prep` so Sam can review
+# the board, QB-share adjustments, and AUTO likely-out flags from the Actions run summary. Does not
+# touch apply_outs.py or attempt a build - see prizepicks-model/docs/RUNBOOK.md. Confirmed outs only
+# go in apply_outs.py, by hand, before dispatching prizepicks-build.yml.
+
+on:
+  schedule:
+    - cron: "0 20 * * 3" # Wed 20:00 UTC -> upcoming Thursday slate (injury reports land Wed PM)
+    - cron: "0 12 * * 0" # Sun 12:00 UTC -> today's Sunday slate
+    - cron: "0 15 * * 1" # Mon 15:00 UTC -> today's Monday slate
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "UTC start, e.g. 2026-10-04T12 (leave blank to auto-compute from today)"
+        required: false
+      end:
+        description: "UTC end, e.g. 2026-10-05T12 (leave blank to auto-compute from today)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: prizepicks-model/pipeline
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r ../requirements.txt
+
+      - name: Compute slate window
+        id: window
+        shell: bash
+        run: |
+          START="${{ github.event.inputs.start }}"
+          END="${{ github.event.inputs.end }}"
+          if [ -z "$START" ]; then
+            case "${{ github.event.schedule }}" in
+              "0 20 * * 3")
+                START=$(date -u -d 'next Thursday 12:00' +%Y-%m-%dT%H)
+                END=$(date -u -d 'next Thursday 12:00 + 1 day' +%Y-%m-%dT%H)
+                ;;
+              *)
+                START=$(date -u -d '12:00' +%Y-%m-%dT%H)
+                END=$(date -u -d '12:00 + 1 day' +%Y-%m-%dT%H)
+                ;;
+            esac
+          fi
+          echo "start=$START" >> "$GITHUB_OUTPUT"
+          echo "end=$END" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch play-by-play
+        run: python fetch_data.py
+
+      - name: Prep slate
+        run: |
+          {
+            echo "## PrizePicks prep: ${{ steps.window.outputs.start }} -> ${{ steps.window.outputs.end }}"
+            echo '```'
+            python run_slate.py prep --start "${{ steps.window.outputs.start }}" --end "${{ steps.window.outputs.end }}"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit new odds snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add snapshots/
+          git diff --cached --quiet || git commit -m "Odds snapshot from scheduled prep run"
+          git push

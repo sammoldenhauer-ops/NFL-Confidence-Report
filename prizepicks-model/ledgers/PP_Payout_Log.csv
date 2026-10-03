@@ -1,0 +1,21 @@
+date,slate,size,legs,leg_pcts,model_all_hit,app_power_mult,standard_mult,app_vs_standard,pp_implied_per_leg,ev_at_app,non_reception_legs
+2026-10-01,Wk4 TNF PIT@CLE,2,Raheim Sanders Receptions More + Pat Freiermuth Receptions Less,58/59,0.336,2.5,3,0.8333333333333334,0.632,-0.16,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Jerry Jeudy Receptions Less + Roman Wilson Receptions Less,56/60,0.331,2.2,3,0.7333333333333334,0.674,-0.272,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Denzel Boston Receptions More + Pat Freiermuth Receptions Less,57/59,0.32799999999999996,2.6,3,0.8666666666666667,0.62,-0.147,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Jerry Jeudy Receptions Less + Travis Homer Receptions Less,56/58,0.327,2.3,3,0.7666666666666666,0.659,-0.248,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Raheim Sanders Receptions More + Roman Wilson Receptions Less,58/60,0.32299999999999995,2.3,3,0.7666666666666666,0.659,-0.257,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Pat Freiermuth Receptions Less + Jerry Jeudy Receptions Less,59/56,0.319,2.4,3,0.7999999999999999,0.645,-0.234,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Raheim Sanders Receptions More + Travis Homer Receptions Less,58/58,0.318,2.3,3,0.7666666666666666,0.659,-0.269,0
+2026-10-01,Wk4 TNF PIT@CLE,2,DK Metcalf Receptions More + Raheim Sanders Receptions More,55/58,0.318,2.4,3,0.7999999999999999,0.645,-0.237,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Denzel Boston Receptions More + Roman Wilson Receptions Less,57/60,0.311,2.4,3,0.7999999999999999,0.645,-0.254,0
+2026-10-01,Wk4 TNF PIT@CLE,2,Denzel Boston Receptions More + Travis Homer Receptions Less,57/58,0.31,2.4,3,0.7999999999999999,0.645,-0.256,0
+2026-10-01,Wk4 TNF PIT@CLE,3,Jerry Jeudy Receptions Less + Roman Wilson Receptions Less + Travis Homer Receptions Less,56/60/58,0.205,3.25,5,0.65,0.675,-0.334,0
+2026-10-01,Wk4 TNF PIT@CLE,3,Denzel Boston Receptions More + Raheim Sanders Receptions More + Pat Freiermuth Receptions Less,57/58/59,0.203,4.0,5,0.8,0.63,-0.188,0
+2026-10-01,Wk4 TNF PIT@CLE,3,Deshaun Watson Pass Yds More + Jerry Jeudy Rec Yds More + Travis Homer Receptions Less,50/52/58,0.18899999999999997,5.25,5,1.05,0.575,-0.008,2
+2026-10-01,Wk4 TNF PIT@CLE,3,Deshaun Watson Pass Yds More + Denzel Boston Rec Yds More + Roman Wilson Receptions Less,50/51/60,0.188,3.75,5,0.75,0.644,-0.295,2
+2026-10-01,Wk4 TNF PIT@CLE,3,Deshaun Watson Pass Yds Less + Pat Freiermuth Receptions Less + Jerry Jeudy Receptions Less,50/59/56,0.185,3.75,5,0.75,0.644,-0.306,1
+2026-10-01,Wk4 TNF PIT@CLE,3,Raheim Sanders Receptions More + Aaron Rodgers Pass Yds Less + DK Metcalf Rec Yds Less,58/50/51,0.184,3.5,5,0.7,0.659,-0.356,2
+2026-10-01,Wk4 TNF PIT@CLE,3,Deshaun Watson Pass Yds Less + Denzel Boston Rush+Rec Yds Less + Roman Wilson Receptions Less,50/50/60,0.184,3.5,5,0.7,0.659,-0.356,2
+2026-10-01,Wk4 TNF PIT@CLE,3,Pat Freiermuth Receptions Less + Roman Wilson Receptions Less + Blake Whiteheart Rec Yds Less,59/60/53,0.183,3.75,5,0.75,0.644,-0.314,1
+2026-10-01,Wk4 TNF PIT@CLE,3,Aaron Rodgers Pass Yds More + DK Metcalf Rush+Rec Yds More + Raheim Sanders Receptions More,50/50/58,0.179,3.5,5,0.7,0.659,-0.374,2
+2026-10-01,Wk4 TNF PIT@CLE,3,DK Metcalf Receptions More + Raheim Sanders Receptions More + Roman Wilson Receptions Less,55/58/60,0.179,3.75,5,0.75,0.644,-0.329,0

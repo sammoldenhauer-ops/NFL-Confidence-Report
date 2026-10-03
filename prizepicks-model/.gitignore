@@ -1,0 +1,17 @@
+.env
+__pycache__/
+*.pyc
+# large / regenerated data
+pipeline/pbp_*.csv
+pipeline/players.csv
+pipeline/*.csv.gz
+pipeline/*.pkl
+pipeline/sgo_slate.json
+pipeline/sgo_page.json
+harness/*.pkl
+harness/slate_*.py
+harness/*.json
+harness/*.npz
+harness/*.npy
+# keep: pipeline/FULL_LEAGUE_TARGET_AND_RUSH_SHARES.csv, pipeline/*.json params, pipeline/outcome_pools.npz, pipeline/pass_pool.npy
+!pipeline/FULL_LEAGUE_TARGET_AND_RUSH_SHARES.csv

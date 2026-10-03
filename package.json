@@ -8,11 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "db:push": "drizzle-kit push && tsx scripts/apply-views.mts",
-    "db:views": "tsx scripts/apply-views.mts",
-    "import:data": "tsx scripts/import-data.mts",
-    "ingest:nflverse": "tsx scripts/ingest-nflverse.mts",
-    "grade": "tsx scripts/grade.mts"
+    "db:push": "drizzle-kit push",
+    "ingest:nflverse": "tsx scripts/ingest-nflverse.mts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",

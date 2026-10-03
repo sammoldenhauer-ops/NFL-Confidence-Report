@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NFL Confidence Report",
-  description: "Monte Carlo prop confidence engine and calibration tracker",
+  description: "PrizePicks NFL prop model - market-centered simulation and Entry Builder",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -27,14 +27,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" className="font-semibold tracking-tight">
               NFL Confidence Report
             </Link>
-            <Link href="/report" className="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50">
-              Report
-            </Link>
-            <Link href="/calibration" className="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50">
-              Calibration
-            </Link>
-            <Link href="/overrides" className="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50">
-              Share Overrides
+            <Link href="/prizepicks" className="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50">
+              PrizePicks
             </Link>
           </nav>
         </header>

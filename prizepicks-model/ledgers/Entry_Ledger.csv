@@ -1,0 +1,18 @@
+date,week,game,entry_id,play_type,picks,payout_x,stake,player,team,stat,side,pp_line,actual,leg_result,note,entry_result,returned
+2026-09-28,3,PHI @ CHI,1,Power,4,5.25,1,Jalen Hurts,PHI,Pass Yds,More,219.5,153,L,,Loss,0
+2026-09-28,3,PHI @ CHI,1,Power,4,5.25,1,DeVonta Smith,PHI,Rec Yds,More,72.5,65,L,,Loss,0
+2026-09-28,3,PHI @ CHI,1,Power,4,5.25,1,Case Keenum,CHI,Pass Yds,More,0.5,247,W,Guarantee Pick (orig 168.5),Loss,0
+2026-09-28,3,PHI @ CHI,1,Power,4,5.25,1,Makai Lemon,PHI,Rec Yds,More,26.5,29,W,,Loss,0
+2026-09-28,3,PHI @ CHI,2,Power,3,5.25,1,Jalen Hurts,PHI,Rush Yds,More,26.5,25,L,book line was 24.5,Loss,0
+2026-09-28,3,PHI @ CHI,2,Power,3,5.25,1,Saquon Barkley,PHI,Rush Yds,More,71.5,82,W,,Loss,0
+2026-09-28,3,PHI @ CHI,2,Power,3,5.25,1,Kyle Monangai,CHI,Rush Yds,More,39.5,31,L,,Loss,0
+2026-09-28,3,PHI @ CHI,3,Power,3,5.75,1,DeVonta Smith,PHI,Receptions,More,5.5,6,W,,Loss,0
+2026-09-28,3,PHI @ CHI,3,Power,3,5.75,1,D'Andre Swift,CHI,Receptions,More,2,2,Push,,Loss,0
+2026-09-28,3,PHI @ CHI,3,Power,3,5.75,1,Tank Bigsby,PHI,Rush Yds,More,12.5,0,L,,Loss,0
+2026-09-28,3,PHI @ CHI,4,Power,4,6.25,1,Rome Odunze,CHI,Rec Yds,More,25.5,44,W,,Loss,0
+2026-09-28,3,PHI @ CHI,4,Power,4,6.25,1,Jalen Hurts,PHI,Rush Yds,More,26.5,25,L,book line was 24.5,Loss,0
+2026-09-28,3,PHI @ CHI,4,Power,4,6.25,1,Case Keenum,CHI,Pass Yds,More,162.5,247,W,,Loss,0
+2026-09-28,3,PHI @ CHI,4,Power,4,6.25,1,Colston Loveland,CHI,Rec Yds,More,33.5,31,L,,Loss,0
+2026-09-28,3,PHI @ CHI,5,Power,3,6.25,1,Jalen Hurts,PHI,Anytime TDs,More,0.5,1,W,Demon line,Win,6.25
+2026-09-28,3,PHI @ CHI,5,Power,3,6.25,1,DeVonta Smith,PHI,Receptions,More,5.5,6,W,,Win,6.25
+2026-09-28,3,PHI @ CHI,5,Power,3,6.25,1,Case Keenum,CHI,Pass Yds,More,154.5,247,W,,Win,6.25

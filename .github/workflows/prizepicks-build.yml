@@ -1,0 +1,78 @@
+name: PrizePicks - build & publish slate
+
+# Manual only. Run this AFTER confirmed injuries are already edited into
+# prizepicks-model/pipeline/apply_outs.py and committed to main (see prizepicks-model/docs/RUNBOOK.md -
+# "ONLY confirmed outs go in DROP_LINES/OUTS. Flags are wrong often."). This workflow does not edit
+# apply_outs.py itself; it builds whatever is already committed.
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "UTC start, e.g. 2026-10-04T12"
+        required: true
+      end:
+        description: "UTC end, e.g. 2026-10-05T12"
+        required: true
+      title:
+        description: 'Report title, e.g. "Week 5 Sunday"'
+        required: true
+      out_name:
+        description: "Output filename with no extension, e.g. Slate_Report_Wk5_SUN"
+        required: true
+      refresh_shares_through_week:
+        description: "Last completed week to refresh shares through (first slate of the week only; leave blank otherwise)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: prizepicks-model/pipeline
+        run: pip install -r ../requirements.txt
+
+      - name: Fetch play-by-play
+        working-directory: prizepicks-model/pipeline
+        run: python fetch_data.py
+
+      - name: Refresh shares
+        if: ${{ github.event.inputs.refresh_shares_through_week != '' }}
+        working-directory: prizepicks-model/pipeline
+        run: python refresh_shares.py ${{ github.event.inputs.refresh_shares_through_week }}
+
+      - name: Prep slate
+        working-directory: prizepicks-model/pipeline
+        run: python run_slate.py prep --start "${{ github.event.inputs.start }}" --end "${{ github.event.inputs.end }}"
+
+      - name: Build report
+        working-directory: prizepicks-model/pipeline
+        run: python run_slate.py build --title "${{ github.event.inputs.title }}" --out "../reports/${{ github.event.inputs.out_name }}.xlsx"
+
+      - name: Export web data
+        working-directory: prizepicks-model/pipeline
+        run: python export_web.py "${{ github.event.inputs.title }}" ../reports/web
+
+      - name: Publish to website
+        run: |
+          mkdir -p public/data/prizepicks/latest
+          cp prizepicks-model/reports/web/slate.json public/data/prizepicks/latest/slate.json
+          cp prizepicks-model/reports/web/sims.json public/data/prizepicks/latest/sims.json
+          cp "prizepicks-model/reports/${{ github.event.inputs.out_name }}.xlsx" public/data/prizepicks/latest/report.xlsx
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/prizepicks/latest prizepicks-model/pipeline/snapshots
+          git diff --cached --quiet || git commit -m "Publish ${{ github.event.inputs.title }} slate"
+          git push

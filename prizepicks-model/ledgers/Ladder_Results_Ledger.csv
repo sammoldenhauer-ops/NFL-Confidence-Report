@@ -1,0 +1,39 @@
+player,stat,method,projection,actual,percentile,range_50,range_80,in_50,in_80,rps,game,date
+Michael Penix,Passing Yards,v4 event sim,229.9,256.0,65.5,169-280,128-341,True,True,0.03585193238732395,ATL @ GB,2026-09-24
+Michael Penix,Pass TDs,Poisson,1.4,1.0,41.5,1-2,0-3,True,True,0.02599312294000001,ATL @ GB,2026-09-24
+Michael Penix,Rushing Yards,old (QB rushing),12.1,0.0,8.3,4-20,0-28,False,True,0.07865827437142858,ATL @ GB,2026-09-24
+Jordan Love,Passing Yards,v4 event sim,227.0,312.0,83.9,165-281,123-344,False,True,0.07898095276214286,ATL @ GB,2026-09-24
+Jordan Love,Pass TDs,Poisson,1.6,2.0,66.3,1-2,0-3,True,True,0.034359907654545455,ATL @ GB,2026-09-24
+Jordan Love,Rushing Yards,old (QB rushing),13.6,0.0,9.6,3-24,0-34,False,True,0.07542262287058822,ATL @ GB,2026-09-24
+Bijan Robinson,Rushing Yards,v4 event sim,93.0,194.0,97.4,61-119,41-153,False,False,0.19862230461688313,ATL @ GB,2026-09-24
+Bijan Robinson,Receiving Yards,v4 event sim,34.3,19.0,34.6,14-49,4-72,True,True,0.031944033666,ATL @ GB,2026-09-24
+Bijan Robinson,Receptions,v4 event sim,4.0,2.0,24.6,2-5,1-8,True,True,0.03947884176399999,ATL @ GB,2026-09-24
+Bijan Robinson,Rush + Rec Yards,sum of sims,127.6,213.0,93.5,90-159,66-197,False,False,0.1293195759494624,ATL @ GB,2026-09-24
+Brian Robinson,Rushing Yards,old (low volume),28.4,50.0,71.9,3-54,0-76,True,True,0.07010217759500001,ATL @ GB,2026-09-24
+Brian Robinson,Receiving Yards,old (low volume),2.5,0.0,23.4,0-21,0-38,True,True,0.025864489508,ATL @ GB,2026-09-24
+Brian Robinson,Receptions,old (low volume),0.3,0.0,26.9,0-2,0-3,True,True,0.03389482684444445,ATL @ GB,2026-09-24
+Brian Robinson,Rush + Rec Yards,sum of sims,45.6,50.0,59.0,17-68,0-94,True,True,0.04421368239111111,ATL @ GB,2026-09-24
+MarShawn Lloyd,Rushing Yards,v4 event sim,53.7,11.0,3.7,31-71,18-95,False,False,0.0926778231509434,ATL @ GB,2026-09-24
+MarShawn Lloyd,Receiving Yards,old (low volume),9.2,7.0,42.1,2-16,0-23,True,True,0.04198045443636364,ATL @ GB,2026-09-24
+MarShawn Lloyd,Receptions,old (low volume),1.2,2.0,74.7,0-2,0-3,True,True,0.06498933894285715,ATL @ GB,2026-09-24
+MarShawn Lloyd,Rush + Rec Yards,sum of sims,64.1,18.0,3.9,40-82,27-108,False,False,0.10776214176851852,ATL @ GB,2026-09-24
+Chris Brooks,Rushing Yards,old (low volume),32.8,0.0,8.5,10-56,0-77,False,True,0.09080311256153847,ATL @ GB,2026-09-24
+Chris Brooks,Receiving Yards,old (low volume),7.2,4.0,35.5,1-13,0-18,True,True,0.059363129222222234,ATL @ GB,2026-09-24
+Chris Brooks,Receptions,old (low volume),0.5,1.0,65.7,0-1,0-2,True,True,0.045164567183333316,ATL @ GB,2026-09-24
+Chris Brooks,Rush + Rec Yards,sum of sims,44.0,4.0,6.9,19-65,7-86,False,False,0.12323793773499998,ATL @ GB,2026-09-24
+Kaleb Johnson,Rushing Yards,old (low volume),23.8,6.0,23.7,7-40,0-56,False,True,0.0660385812586207,ATL @ GB,2026-09-24
+Kaleb Johnson,Receiving Yards,old (low volume),2.6,10.0,99.3,1-5,0-6,False,False,0.40186105985,ATL @ GB,2026-09-24
+Kaleb Johnson,Receptions,old (low volume),0.2,1.0,75.1,0-1,0-2,True,True,0.06393150961666666,ATL @ GB,2026-09-24
+Kaleb Johnson,Rush + Rec Yards,sum of sims,28.9,16.0,33.6,10-43,3-59,True,True,0.047426665431034486,ATL @ GB,2026-09-24
+Drake London,Receiving Yards,v4 event sim,80.4,194.0,97.4,43-109,24-147,False,False,0.22375762664230764,ATL @ GB,2026-09-24
+Drake London,Receptions,v4 event sim,6.1,9.0,81.3,4-8,2-11,False,True,0.08219789927083333,ATL @ GB,2026-09-24
+Jahan Dotson,Receiving Yards,old (low volume),21.3,11.0,38.6,0-45,0-66,True,True,0.04172989312105263,ATL @ GB,2026-09-24
+Jahan Dotson,Receptions,old (low volume),1.6,1.0,39.8,0-3,0-5,True,True,0.04370856291538462,ATL @ GB,2026-09-24
+Kyle Pitts,Receiving Yards,v4 event sim,38.7,5.0,11.3,15-55,4-82,False,True,0.05367279581034482,ATL @ GB,2026-09-24
+Kyle Pitts,Receptions,old (low volume),3.3,1.0,21.7,1-5,0-7,True,True,0.0801819708647059,ATL @ GB,2026-09-24
+Christian Watson,Receiving Yards,v4 event sim,64.2,96.0,77.9,29-90,12-128,False,True,0.04716347035148514,ATL @ GB,2026-09-24
+Christian Watson,Receptions,v4 event sim,4.0,7.0,87.5,2-5,1-7,False,True,0.09523658451363635,ATL @ GB,2026-09-24
+Matthew Golden,Receiving Yards,v4 event sim,45.7,100.0,91.4,18-65,5-95,False,False,0.130282646540625,ATL @ GB,2026-09-24
+Matthew Golden,Receptions,old (low volume),3.4,5.0,74.8,2-5,0-6,True,True,0.06544066588666665,ATL @ GB,2026-09-24
+Tucker Kraft,Receiving Yards,v4 event sim,52.4,26.0,28.2,23-73,9-106,True,True,0.03384574605555555,ATL @ GB,2026-09-24
+Tucker Kraft,Receptions,v4 event sim,4.2,4.0,54.0,2-6,1-8,True,True,0.02775800125454546,ATL @ GB,2026-09-24
