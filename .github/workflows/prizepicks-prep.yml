@@ -28,7 +28,7 @@ jobs:
     defaults:
       run:
         working-directory: prizepicks-model/pipeline
-        shell: 'C:\Program Files\Git\bin\bash.exe -e {0}'
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
