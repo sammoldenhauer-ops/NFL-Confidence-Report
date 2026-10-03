@@ -32,10 +32,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
       - name: Write SGO API key
         working-directory: prizepicks-model
         run: echo "SGO_API_KEY=${{ secrets.SGO_API_KEY }}" > .env
