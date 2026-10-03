@@ -32,7 +32,7 @@ jobs:
     runs-on: [self-hosted, prizepicks]
     defaults:
       run:
-        shell: bash
+        shell: 'C:\Program Files\Git\bin\bash.exe -e {0}'
     steps:
       - uses: actions/checkout@v4
 
