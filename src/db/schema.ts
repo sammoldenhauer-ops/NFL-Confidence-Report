@@ -87,3 +87,31 @@ export const ingestRuns = pgTable("ingest_runs", {
   detail: jsonb("detail"),
   ranAt: timestamp("ran_at").defaultNow().notNull(),
 });
+
+// §PrizePicks UI. A leg is {player, team, stat, side: 'More'|'Less', line, free}.
+
+export const entries = pgTable("entries", {
+  id: serial("id").primaryKey(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  entryDate: text("entry_date").notNull(),
+  playType: text("play_type").notNull(), // 'power' | 'flex'
+  promo: text("promo"),
+  legs: jsonb("legs").notNull(),
+  stakeDollars: doublePrecision("stake_dollars").notNull(),
+  multiplier: doublePrecision("multiplier").notNull(),
+  payoutDollars: doublePrecision("payout_dollars"),
+  status: text("status").notNull().default("pending"), // 'pending' | 'win' | 'loss'
+  gradedAt: timestamp("graded_at"),
+});
+
+// Reference table of real observed PrizePicks multipliers - Entry Builder checks this (most recent matching
+// legCount+playType+promo) before falling back to the standard payout table in slate.json.
+export const ppMultipliers = pgTable("pp_multipliers", {
+  id: serial("id").primaryKey(),
+  loggedAt: timestamp("logged_at").defaultNow().notNull(),
+  playType: text("play_type").notNull(),
+  promo: text("promo"),
+  legCount: integer("leg_count").notNull(),
+  legs: jsonb("legs").notNull(),
+  multiplier: doublePrecision("multiplier").notNull(),
+});

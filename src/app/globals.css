@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* PrizePicks app theme (/prizepicks/*) - dark terminal look, scoped so it never leaks into the public site. */
+.pp-theme {
+  --pp-bg-from: #000000;
+  --pp-bg-to: #3a3a3a;
+  --pp-fg: #f2f2f2;
+  --pp-fg-dim: #9a9a9a;
+  --pp-green: #22c55e;
+  --pp-red: #ef4444;
+  --pp-purple: #c084fc;
+  --pp-teal: #22d3ee;
+  --pp-orange: #f59e0b;
+  --pp-yellow: #eab308;
+  --pp-border: #ffffff;
+  --pp-accent: linear-gradient(90deg, #ec4899, #a855f7);
+
+  background: linear-gradient(135deg, var(--pp-bg-from), var(--pp-bg-to));
+  color: var(--pp-fg);
+  min-height: 100dvh;
+  font-family: var(--font-pp-body), monospace;
+}
+
+.pp-title {
+  font-family: var(--font-pp-title), monospace;
+}

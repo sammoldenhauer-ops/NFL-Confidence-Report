@@ -1,111 +1,62 @@
-import fs from "node:fs/promises";
-import path from "node:path";
+import { getBankrollSummary } from "../../lib/bankroll";
+import { loadSlate } from "../../lib/slate-data";
+import { saveStartingBankroll } from "./actions";
 
 export const dynamic = "force-dynamic";
 
-type Game = {
-  game: string;
-  home: string;
-  away: string;
-  kickoff_utc: string;
-  favorite: string | null;
-  spread: number;
-  total: number;
-};
-
-type Note = { team: string; player: string; status: string; note: string };
-type OutHandled = { team: string; player: string; recent_share: number; kind: string };
-
-type Slate = {
-  title: string;
-  generated_at: string;
-  model_version: string;
-  games: Game[];
-  legs: unknown[];
-  injuries: { outs_handled: OutHandled[]; notes: Note[] };
-};
-
-async function loadSlate(): Promise<Slate | null> {
-  const file = path.join(process.cwd(), "public/data/prizepicks/latest/slate.json");
-  try {
-    return JSON.parse(await fs.readFile(file, "utf8"));
-  } catch {
-    return null;
-  }
+function fmtDate(iso: string) {
+  const d = new Date(iso);
+  return d.toLocaleString(undefined, { month: "numeric", day: "numeric", year: "2-digit", hour: "numeric", minute: "2-digit" });
 }
 
-export default async function PrizePicksPage() {
-  const slate = await loadSlate();
-
-  if (!slate) {
-    return (
-      <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-4 px-4 py-16">
-        <h1 className="text-2xl font-semibold tracking-tight">PrizePicks</h1>
-        <p className="text-zinc-600 dark:text-zinc-400">
-          No slate has been published yet. Run the &quot;PrizePicks - build &amp; publish slate&quot;
-          GitHub Action to generate one.
-        </p>
-      </div>
-    );
-  }
+export default async function HomePage() {
+  const [slate, bankroll] = await Promise.all([loadSlate(), getBankrollSummary()]);
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-8 px-4 py-16">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-tight">{slate.title}</h1>
-        <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-          Model {slate.model_version} - generated {new Date(slate.generated_at).toLocaleString()}
-        </p>
+    <div className="mx-auto flex max-w-md flex-col items-center gap-10 pt-10 text-center">
+      <h1 className="pp-title text-xl tracking-wide">
+        LAST RUN: {slate ? fmtDate(slate.generated_at) : "X/X/X X:XX AM/PM"}
+      </h1>
+
+      <div className="flex w-full flex-col items-center gap-2">
+        <h2 className="pp-title text-base">BANKROLL:</h2>
+        {bankroll.starting === null ? (
+          <form action={saveStartingBankroll} className="flex items-center gap-2">
+            <span>$</span>
+            <input
+              name="amount"
+              type="number"
+              step="0.01"
+              min="0"
+              required
+              className="w-28 rounded-md border border-white bg-transparent px-2 py-1 text-center text-xl"
+            />
+            <button type="submit" className="rounded-md px-3 py-1 text-base" style={{ background: "var(--pp-green)", color: "black" }}>
+              Save
+            </button>
+          </form>
+        ) : (
+          <p className="text-2xl">${bankroll.current!.toFixed(2)}</p>
+        )}
+        {bankroll.starting === null && (
+          <p className="text-base" style={{ color: "var(--pp-fg-dim)" }}>
+            will be manually put in once and tracked as entries are entered
+          </p>
+        )}
       </div>
 
-      <section className="flex flex-col gap-3">
-        <h2 className="font-semibold">Games</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {slate.games.map((g) => (
-            <div
-              key={g.game}
-              className="rounded-lg border border-zinc-200 bg-white p-4 text-sm dark:border-zinc-800 dark:bg-zinc-900"
-            >
-              <div className="font-medium">{g.game}</div>
-              <div className="mt-1 text-zinc-600 dark:text-zinc-400">
-                {g.favorite ? `${g.favorite} -${g.spread}` : "Even"} &middot; total {g.total}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {(slate.injuries.outs_handled.length > 0 || slate.injuries.notes.length > 0) && (
-        <section className="flex flex-col gap-3">
-          <h2 className="font-semibold">Injuries &amp; notes</h2>
-          <ul className="flex flex-col gap-2 text-sm">
-            {slate.injuries.outs_handled.map((o, i) => (
-              <li key={`out-${i}`} className="text-zinc-700 dark:text-zinc-300">
-                <span className="font-medium">
-                  {o.player} ({o.team})
-                </span>{" "}
-                - OUT, {o.recent_share}% {o.kind} redistributed
-              </li>
-            ))}
-            {slate.injuries.notes.map((n, i) => (
-              <li key={`note-${i}`} className="text-zinc-700 dark:text-zinc-300">
-                <span className="font-medium">
-                  {n.player} ({n.team})
-                </span>{" "}
-                - {n.status}: {n.note}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <a
-        href="/data/prizepicks/latest/report.xlsx"
-        download
-        className="w-fit rounded-lg border border-zinc-200 bg-white px-4 py-2 text-sm font-medium transition hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
-      >
-        Download full report (.xlsx)
-      </a>
+      <div className="flex w-full flex-col items-center gap-2">
+        <h2 className="pp-title text-base">UP/DOWN:</h2>
+        {bankroll.upDown === null ? (
+          <p className="text-base" style={{ color: "var(--pp-fg-dim)" }}>
+            will be tracked as entries are entered
+          </p>
+        ) : (
+          <p className="text-2xl" style={{ color: bankroll.upDown >= 0 ? "var(--pp-green)" : "var(--pp-red)" }}>
+            {bankroll.upDown >= 0 ? "+" : "-"}${Math.abs(bankroll.upDown).toFixed(2)}
+          </p>
+        )}
+      </div>
     </div>
   );
 }

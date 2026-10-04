@@ -20,6 +20,7 @@ for x in L.itertuples():
     lad = R[(R['Player'] == x.player) & (R['Stat'] == x.stat)].sort_values('Line')
     legs.append({'key': f'{x.player} | {x.stat}', 'player': x.player, 'team': x.team, 'game': f'{x.away} @ {x.home}', 'stat': x.stat,
                  'book_line': float(x.line), 'p_more': round(float(x.p_more), 4), 'p_less': round(float(x.p_less), 4),
+                 'book_p_over': round(float(x.book_p_over), 4) if pd.notna(x.book_p_over) else None,
                  'ladder': [{'line': float(r.Line), 'pick': r.Pick, 'chance': round(float(r.Confidence), 4)} for r in lad.itertuples()]})
 entries = [{'size': int(e.size), 'legs': list(e.legs), 'leg_probs': [float(p) for p in e.leg_probs], 'p_all': round(float(e.p_all), 4),
             'combo_corr': float(getattr(e, 'combo_corr', 1.0))} for e in E.itertuples()]
